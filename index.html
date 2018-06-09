@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalizer.css">
+  <title>Document</title>
+</head>
+<body>
+    <header>
+      <h1>
+        <span class="title">Number</span>
+        <span class="title">Guesser</span>
+      </h1>
+    </header>
+
+    <div class="container">
+      <div class="guess-container">
+        <input class="input__text" type="text" placeholder="Enter your guess">
+        <input class="min" type="text" placeholder="min">
+        <input class="max" type="text" placeholder="max">
+        <button class="guess-btn btn">Guess</button>
+        <button class="clear-btn btn">Clear</button>
+      </div>
+      <p class="guess__text hide last">Your last guess was</p>
+      <div class="guess-number hide"></div>
+      <p class="guess__text hide action"></p>
+      <button class="reset-btn btn hide">Reset</button>
+      <div class="error hide">
+          <span>input is not a number or input is outside range of values</span>
+     </div>
+    </div>
+
+
+    <script src="game.js"></script>
+</body>
+</html>

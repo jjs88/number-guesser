@@ -1,0 +1,110 @@
+html {
+  font-size: 100%;
+  font-family: 'Open Sans';
+  font-weight: bold 700;
+
+}
+
+.guess-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 25rem;
+  position: relative;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 200%;
+  justify-content: center;
+  margin: 40px auto;
+  max-width:900px;
+  position: relative;
+}
+
+input {
+  outline: none;
+}
+
+.input__text {
+  width:25rem;
+}
+
+.input__text:valid {
+  border: #ed458b;
+}
+
+header {
+  background-color: #404041;
+  color: white;
+  display: flex;
+  font-size: 180%;
+  justify-content: center;
+}
+
+.title:first-child {
+  color:#ed458b;
+}
+
+.title:last-child {
+  color:#e6e7e8;
+}
+
+.guess-btn, .clear-btn {
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #d0d2d3;
+  outline: none;
+}
+
+.reset-btn {
+  /* font-size: 180%; */
+  width: 25rem;
+}
+
+.guess-btn:focus, .clear-btn:focus {
+  background-color: #929497;
+}
+
+.guess-btn:hover, .clear-btn:hover {
+  background-color: #eb008b;
+}
+
+.guess-number {
+  color: #eb008b;
+  font-size: 13rem;
+}
+
+.guess__text:first-of-type {
+  margin-bottom: 0;
+}
+
+.guess__text:last-of-type {
+  margin-top: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  background-color: red;
+  border-radius: 5px;
+  text-align: center;
+  padding:5px;
+  position: absolute;
+  font-size: 60%;
+  /* left: 0; */
+  right: -10px;
+  top: -30px;
+  margin: 0 auto;
+  width:15rem;
+}
